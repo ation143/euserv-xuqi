@@ -28,51 +28,58 @@ TRC20: TBY7e7YUQCG7wEH3PA8pk6fQPwpshb8Z55
 
 ## 使用说明
 已添加Github Action模板,更加方便的使用,无需腾讯云函数(**已不在免费**),自行修改Action Secrets 即可,推荐有基础的用户使用,暂时没精力写教程
-## 总共添加下方8个secrets变量
+## 总共添加下方8个secrets变量(**Action Secrets设置，非腾讯云函数设置，不要混淆**)
 # 账户信息：用户名和密码
-    ```
-    EUSERV_USERNAME
-    ```
-    - 德机登录账号（邮箱和数字ID都可以）
+- 1 德机登录账号（邮箱和数字ID都可以）
+```
+EUSERV_USERNAME
+```
 
-    ```
-    EUSERV_PASSWORD
-    ```
-    - 德机登录密码
+- 2 德机登录密码
+```
+EUSERV_PASSWORD
+```
+
 
 # 2FA机密Key
-    ```
-    EUSERV_2FA_SECRET
-    ```
-    - 德机双因素验证key，在设置里面第三项点开就能看到
+- 3 德机双因素验证key，在设置里面第三项点开就能看到
+```
+EUSERV_2FA_SECRET
+```
+
 
 # TrueCaptcha API 配置
-    ```
-    TRUECAPTCHA_USERID
-    ```
-    - TrueCaptcha的登录账号
+- 4 TrueCaptcha的登录账号
+```
+TRUECAPTCHA_USERID
+```
+- 5 TrueCaptcha生成的key
+```
+TRUECAPTCHA_APIKEY
+```
 
-    ```
-    TRUECAPTCHA_APIKEY
-    ```
-    - TrueCaptcha生成的key
 	
 # Mailparser 配置
-    ```
-    MAILPARSER_DOWNLOAD_URL_ID
-    ```
-    - Mailparser下载页末端就是
+- 6 Mailparser下载页末端就是
+```
+MAILPARSER_DOWNLOAD_URL_ID
+```
+
 
 # Telegram Bot 推送配置
-    ```
-    TG_BOT_TOKEN
-    ```
-    - TG 机器人token，在botfather里可以获取
+- 7 TG 机器人token，在botfather里可以获取
+```
+TG_BOT_TOKEN
+```
 
-    ```
-    TG_USER_ID
-    ```
-    - TG用户数字ID
+- 8 TG用户数字ID
+```
+TG_USER_ID
+```
+
+## 以上添加的8个Action Secrets变量，非腾讯云函数设置，不要混淆了
+
+## Github Action设置到此结束，下方为腾讯云函数计算设置教程
 
 ## 各家大厂云函数Serverless对比一览表
 
