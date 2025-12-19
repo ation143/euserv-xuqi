@@ -60,7 +60,8 @@ TRUECAPTCHA_APIKEY
 
 	
 # Mailparser 配置
-- 6 Mailparser下载页末端就是
+![Alt text](image/geturlid.png)
+- 6 Mailparser末端（**反斜杠/**）打码的地方就是你的URL_ID
 ```
 MAILPARSER_DOWNLOAD_URL_ID
 ```
@@ -192,7 +193,7 @@ Fork一个到自己的仓库然后点个Star⭐️ 改一下仓库的Action Secr
     ![Alt text](<image/mailparser_data_parsing_rules_pin .png>)
 6.  #### 添加取邮件标题的规则
     ![Alt text](image/mailparser_data_parsing_rules_subject.png)
-7.  #### 添加筛选发件人邮箱地址的规则
+7.  #### 添加筛选发件人邮箱地址的规则,注意： 邮件发件人规则使用下面的邮件模板是无法获取到FROM地址的， 需要从你的邮箱中下载一份由发件人为： support@euserv.de 的邮件到本地 然后上传到Mailparser中，使用这份邮件提取FROM就可以了
     ![Alt text](image/mailparser_data_parsing_rules_sender.png)
 8.  #### 筛选出收件人邮箱地址的规则  
     ![Alt text](image/mailparser_data_parsing_rules_receiver.png)
@@ -267,5 +268,4 @@ VAT Number...............: 162/156/36600
 Tax office ..............: Jena
 International VAT Number.: DE813856317
 ```
-## 邮件发件人规则使用模板是无法获取到的
-## 需要从你的邮箱中下载一份由发件人为： support@euserv.de 的邮件到本地 然后上传到Mailparser中，使用这份邮件提取from就可以了
+
