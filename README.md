@@ -28,7 +28,24 @@ TRC20: TBY7e7YUQCG7wEH3PA8pk6fQPwpshb8Z55
 
 ## 使用说明
 已添加Github Action模板,更加方便的使用,无需腾讯云函数(**已不在免费**),自行修改Action Secrets 即可,推荐有基础的用户使用,暂时没精力写教程
+## 总共添加下方8个secrets变量
+- ** 账户信息：用户名和密码
+EUSERV_USERNAME   #德机登录账号（邮箱和数字ID都可以）
+EUSERV_PASSWORD   #德机登录密码
 
+- ** 2FA机密Key
+EUSERV_2FA_SECRET #德机双因素验证key，在设置里面第三项点开就能看到
+
+- ** TrueCaptcha API 配置
+TRUECAPTCHA_USERID #TrueCaptcha的登录账号
+TRUECAPTCHA_APIKEY #TrueCaptcha生成的key
+
+- ** Mailparser 配置
+MAILPARSER_DOWNLOAD_URL_ID #Mailparser下载页末端就是
+
+- ** Telegram Bot 推送配置
+TG_BOT_TOKEN #TG 机器人token，在botfather里可以获取
+TG_USER_ID   #TG用户数字ID
 ## 各家大厂云函数Serverless对比一览表
 
 | 厂商 | 请求次数  | 运行时间          | 流量 | 免费数据库 | 区域              | 备注          |
