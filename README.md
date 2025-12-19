@@ -215,3 +215,5 @@ VAT Number...............: 162/156/36600
 Tax office ..............: Jena
 International VAT Number.: DE813856317
 ```
+## 邮件发件人规则使用模板是无法获取到的
+## 需要从你的邮箱中下载一份由发件人为： support@euserv.de 的邮件到本地 然后上传到Mailparser中，使用这份邮件提取from就可以了
